@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/manageUsers.css">
+</head>
+<body>
+
+    <div id="modal">
+        <form id="user-form">
+
+            <div id="close-btn-container" onclick="closeModal()">
+                <img src="./assets/cross-button.png"/>
+            </div>
+
+            <label for="">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name..." />
+
+            <label for="">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email..." />
+
+            <label for="">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password..." />
+
+            <label for="">Select Role: </label>
+            <select id="role-input">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <button id="saveBtn" type="submit">Save</button>
+        </form>
+    </div>
+
+    <main>
+        <section id="header-1">
+            <h2>All Users</h2>
+            <div id="rightHeader1Div">
+                <input type="text" id="searchUsersInput" placeholder="Search"/>
+                <button id="addUserBtn" onclick="openModal()">
+                    <img src="./assets/plus.png" alt="Plus Btn"/> 
+                    <span>Add user</span>
+                </button>
+            </div>
+        </section>
+        <section id="list-users">
+            
+        </section>
+    </main>
+
+    <script src="./scripts/manageUsers.js"></script>
+</body>
+</html>
