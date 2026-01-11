@@ -4,3 +4,5 @@ BackEnd/node_modules/
 # (optional but recommended)
 .env
 .DS_Store
+
+User Dashboard/UD_BackEnd/node_modules/
