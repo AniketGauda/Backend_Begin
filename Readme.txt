@@ -329,3 +329,9 @@
 
 ########################################################## Lec 11 ####################################################################
 
+> Made a Get API to get all the users data from the DB.
+> Making an Api Cal to get all the users data and finally showing in the UI.
+> In search also added a filter
+> Finally Pushed the code into the Git.
+
+########################################################## Lec 11 ####################################################################
