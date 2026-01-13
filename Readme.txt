@@ -321,3 +321,8 @@
 
 ########################################################## Lec 10 ####################################################################
 
+> Split Our User Dashboard in 2 parts UD_FrontEnd and UD_BackEnd.
+> Did npm init y in UD_BackEnd and Setup a server.
+> Made a POST API which is getting the data from the front-end and storing in the Mongo DB.
+> On submit of the form from the front-end i am making that api call named ('/createUser');
+> Finally Pushed the Code into the git.
