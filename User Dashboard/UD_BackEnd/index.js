@@ -42,6 +42,15 @@ app.post('/createUser',async function(req,res) {
     }
 })
 
+app.get('/getAllUsers',async function(req,res) {
+    try {
+        const allUser = await User.find();
+        res.json({users: allUser, message: 'All Users fetched Successfully!', status: 'true'});
+    } catch (error) {
+        res.json({err: error.message, status: 'false'})
+    }
+})
+
 app.listen(PORT, ()=>{
     console.log('Server is running on Port:',PORT);
 })
